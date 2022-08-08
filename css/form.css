@@ -1,0 +1,87 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  padding:30px;
+}
+.input_group{
+  border: 1px  solid #cacaca;
+  width: 300px;
+  height: 40px;
+  line-height:40px;
+  padding: 0 10px;
+}
+.input_email{
+  position: relative;
+  padding: 0 30px;
+}
+.input_group input{
+  width:100%;
+  border:none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  top: -2px;
+}
+.input_group textarea:focus,.input_group input:focus{
+  outline: none;
+}
+.input_email::before{
+  content: "";
+  background-image:url(https://static.cdn-eztravel.com/member/pc/v1.10.6/images/icons/icon-email.png);
+  width: 30px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:80%;
+  display: inline-block;
+  position: absolute;
+  left:0;
+}
+.other_input{
+  margin-top:20px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  height: 35px;
+  color: #fff;
+  padding: 5px 20px;
+  background-color: #e2702c;
+  border-radius: 40px;
+  font-size: 18px;
+  width: 70%;
+  max-width: 350px;
+  letter-spacing: 1px;
+}
+.other_input::placeholder{
+  color: #f2c6ad;
+  text-align: center;
+}
+.radioLabel::before{
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  width: 19px;
+  height: 19px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+.radioLabel::before{
+  background-image:url(https://static.cdn-eztravel.com/member/pc/v1.10.6/images/icons/radiobtn-normal.png)
+}
+input[type="radio"]:checked+.radioLabel::before{
+  background-image:url(https://static.cdn-eztravel.com/member/pc/v1.10.6/images/icons/radiobtn-selected.svg)
+}
+
+input[type="checkbox"], input[type="radio"] {
+  display: none;
+}

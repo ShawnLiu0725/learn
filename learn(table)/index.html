@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>訂單編號</th>
+                <th>訂單日期</th>
+                <th>商品名稱</th>
+                <th>出發日期</th>
+                <th>商品金額</th>
+                <th>已付</th>
+                <th>未付</th>
+                <th>訂單服務</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table1">
+                <td>ORD0012562976</td>
+                <td>2018/03/28</td>
+                <td>永豐棧酒店</td>
+                <td>2018/04/12</td>
+                <td>3,360</td>
+                <td>0</td>
+                <td>3360</td>
+                <td style="display: flex;flex-direction: column;">
+                    <button type="button" style="flex:1">管理訂單</button>
+                    <button type="button" style="flex:1">聯絡客服</button>
+                    <button type="button" style="flex:1">刪除訂單</button>
+                </td>
+            </tr>
+            <tr class="table2">
+                <td rowspan="2">ORD0012354190</td>
+                <td rowspan="2">2018/01/16</td>
+                <td>【全台】王品集團系列餐券,票種:舒果斯米蘭蔬食套餐單人券(二張)成人票</td>
+                <td>2018/01/16</td>
+                <td>860</td>
+                <td>860</td>
+                <td>0</td>
+                <td rowspan="2">
+                    <button type="button">管理訂單</button>
+                    <button type="button">聯絡客服</button>
+                    <button type="button">刪除訂單</button>
+                </td>
+            </tr>
+            <tr class="table3">
+                <td>【全台】王品集團系列餐券,票種:西堤牛排套餐(三張)成人票</td>
+                <td>2018/01/16</td>
+                <td>1650</td>
+                <td>1650</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -96,8 +96,150 @@ document.write(test.length);
 document.write("</br>");
 
 //函式 function
-function hello(){
-    document.write("哈囉");
+function hello(name,age){
+    document.write("哈囉"+name+"你今年"+age+"歲嗎?");
+}
+hello("Shawn","18");
+document.write("</br>");
+function add(number1,number2){
+    document.write(number1 + number2);
+}
+add(8,14);
+document.write("</br>");
+function tryy(ha1,ha2){
+    return ha1 * ha2 ;
+}
+document.write( tryy(99,100) );
+document.write("</br>");
+
+//if判斷
+//first situation
+var hungry = true;
+if(hungry){
+    document.write("我就去吃飯!");
 }
 
-hello();
+document.write("</br>");
+//second situation 
+var rainy = true 
+if(rainy){
+    document.write("我就開車去上班!");
+}
+else{
+    document.write("我就走路!");
+}
+
+document.write("</br>");
+//third situation
+var score = 2
+if(score==100){
+    document.write("我給你1000");
+}
+else if(score>=80){
+    document.write("我就給你500");
+}
+else if(score>=60){
+    document.write("我就給你300");
+}
+else{
+    document.write("你就給我5000");
+}
+
+document.write("</br>");
+//&&(且)、||(或)(輸入法:shift+\)、!(反面之意)(ex:!rainy)
+//                                         (!+變數名稱)
+//練習:呈現最大值(也可使用if、else if、else搭配">="去撰寫)
+// var firstnum = prompt("輸入數字一");
+// var secondnum = prompt("輸入數字二");
+// var thirdnum = prompt("輸入數字三");
+// firstnum=parseInt(firstnum);
+// secondnum=parseInt(secondnum);
+// thirdnum=parseInt(thirdnum);
+// function num(firstnum,secondnum,thirdnum){
+//     Math.max(firstnum,secondnum,thirdnum);
+// }
+// if(num==firstnum){
+//     document.write(firstnum+"是最大的數字");
+// }
+// else if(num==secondnum){
+//     document.write(secondnum+"是最大的數字");
+// }
+// else{
+//     document.write(thirdnum+"是最大的數字");
+// }
+
+//物件 object
+//key 鍵 
+//value 值
+var person = {
+    myname:"Shawn",
+    myage:18,
+    is_man:true,
+    print_my_name:function(){
+        document.write(this.myage);
+    }
+};
+document.write(person);
+document.write("</br>");
+document.write(person.myname);
+document.write("</br>");
+person.print_my_name;
+
+//真實世界物件
+var movie = {
+    title:"刻在你心底的名字",
+    maker:"氧氣電影",
+    duration:114,
+    actors:[
+        {
+            hisname:"陳昊森",
+            hisage:24,
+            he_is_male:true
+        },
+        {
+            hisname:"曾敬驊",
+            hisage:23,
+            he_is_male:true
+        }
+    ]
+}
+document.write(movie.actors[1].hisname);
+document.write("</br>");
+
+//while 迴圈
+var i = 1;
+while(i<=100){
+    document.write(i);
+    document.write("</br>");
+    i=i+1; //(i=i+1)=i++
+}
+
+do{
+    i++;
+    document.write(i+"嗨");
+    document.write("</br>");
+}while(i<=10)
+
+//密碼檢驗程式
+// var password = 123456789;
+// var input;
+// var entry_count = 0;
+// var entry_limit = 3;
+// var out_of_limit= false;
+
+// while(password!=input && !out_of_limit){
+//     entry_count++;
+//     if(entry_count<=entry_limit){
+//         input=prompt("請輸入密碼");
+//     }
+//     else{
+//         out_of_limit=true;
+//     }
+// }
+
+// if(out_of_limit){
+//     alert("超出登入次數");
+// }
+// else{
+//     alert("登入成功");
+// }
