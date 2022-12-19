@@ -243,3 +243,11 @@ do{
 // else{
 //     alert("登入成功");
 // }
+
+//for 迴圈
+for(var i = 1;i<10;i++){
+    document.write(i);
+    document.write("</br>");
+}
+
+var friends = []
